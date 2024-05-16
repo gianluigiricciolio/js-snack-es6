@@ -22,8 +22,10 @@ const teams = [
     }
 ];
 
+console.log(JSON.parse(JSON.stringify(teams)));
 generateStats(teams);
 console.log(teams);
+
 const newTeams = teams.map((element) => {
     return {
         name: element.name,
@@ -32,8 +34,6 @@ const newTeams = teams.map((element) => {
 });
 
 console.log(newTeams);
-
-
 
 
 // FUNCTIONS
