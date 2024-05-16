@@ -20,13 +20,20 @@ const teams = [
         points: 0,
         fouls:  0
     }
-]
-
-console.log(teams);
+];
 
 generateStats(teams);
-
 console.log(teams);
+const newTeams = teams.map((element) => {
+    return {
+        name: element.name,
+        fouls: element.fouls
+    };
+});
+
+console.log(newTeams);
+
+
 
 
 // FUNCTIONS
